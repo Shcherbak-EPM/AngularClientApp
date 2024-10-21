@@ -3,8 +3,18 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["app/components/*"],
+      "@services/*": ["app/services/*"],
+      "@models/*": ["app/models/*"],
+      "@environments/*": ["environments/*"],
+      "@interceptors/*": ["app/interceptors/*"],
+      "@app/*": ["app/*"]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
+    "forceConsistentCasingInFileNames":true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,

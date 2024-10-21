@@ -1,0 +1,16 @@
+<div class="search-container">
+    <input type="text" placeholder="Enter data..." [(ngModel)]="inputData" />
+
+    <label for="httpMethod">Choose Method:</label>
+    <select id="httpMethod" [(ngModel)]="httpMethod">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+    </select>
+
+    <button (click)="sendRequest()">GO</button>
+
+    <div class="log">
+        <pre *ngFor="let event of logEvents">{{ event }}</pre>
+    </div>
+    <ng-container #footerContainer></ng-container>
+</div>
